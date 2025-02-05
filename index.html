@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script type="module" src="main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <!-- <script type="text/javascript">
+   
+  </script> -->
+
+</head>
+
+<body class="light-mode">
+  <nav class="navbar">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="logo">ASGx</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">My Stack</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+
+      <h1>Hi, I'm <span class="highlight">Amit Gahlot</span></h1>
+      <p class="typing-text"></p>
+      <div class="hero-cta">
+        <a href="#contact" class="cta-button">Get in Touch</a>
+        <a href="#projects" class="cta-button secondary">View Work</a>
+      </div>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content" >
+      <div class="about-image">
+        <img src="assets/photo.jpeg" id="speak" alt="Profile Picture" />
+      </div>
+      <div class="about-text" >
+        <p>"Hi, I am Amit Gahlot, an aspiring software engineer pursuing a BSc in Computer Science at BBD University. I
+          am passionate about leveraging technology to solve real-world challenges. My experience includes managing
+          Intellectual Property Rights and developing innovative projects, such as a smart expense tracker that helps
+          users efficiently manage their finances. I am continuously exploring new technologies to expand my skill set
+          and make meaningful contributions to the tech industry."
+        </p>
+        <audio id="about-audio">
+          <source src="assets/about audio.mp3" type="audio/mpeg">
+        </audio>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">0.5+</span>
+            <span class="stat-label">Year Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <!-- <div class="stat">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- skill -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>My Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Flutter</h3>
+          <p>Cross-platform, fast, and beautiful UI framework</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Semantic markup and modern HTML features</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <p>Modern layouts and animations</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>ES6+ and modern frameworks</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <p>Component-based architecture</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <p>Programming language</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>SQL</h3>
+          <p>Database design and queries</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+          <p>Version control and collaboration</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="timeline">
+    <h2>Experience & Education</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2024 - Present</h3>
+          <h4>Mobile App Developer Intern</h4>
+          <p>Developing innovative mobile applications.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2021 - 2025</h3>
+          <h4>Computer Science Degree</h4>
+          <p>Bachelor's in Computer Science</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/expense.avif" alt="Project 1">
+          <div class="project-overlay">
+            <span>Click to View Details</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Fiscafy</h3>
+          <p>Fiscafy: Simplifying expense tracking, budgeting, and financial management.</p>
+          <div class="project-tech">
+            <span>Flutter</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h4>Technologies Used:</h4>
+          <ul>
+            <li>Flutter</li>
+            <li>SQLite</li>
+
+          </ul>
+          <p class="project-description">
+            Fiscafy is an easy-to-use expense tracker that helps you manage income, expenses, budgets, and financial
+            goals. It offers real-time tracking, multi-currency support, and security features, making it your personal
+            finance assistant. </p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/currency.webp" alt="Project 2">
+          <div class="project-overlay">
+            <span>Click to View Details</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>CoinQuick</h3>
+          <p>Real-time currency converter for everyone.</p>
+          <div class="project-tech">
+
+            <span>ReactJs</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h4>Technologies Used:</h4>
+          <ul>
+            <li>ReactJs</li>
+            <li>Tailwind CSS</li>
+
+          </ul>
+          <p class="project-description">
+            CoinQuick is a simple and efficient currency converter app that provides real-time exchange rates. It’s
+            designed to help users quickly and accurately convert currencies, making it perfect for travelers and
+            professionals who need reliable, up-to-date conversions.
+          </p>
+          <a href="https://coinquick.netlify.app" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/calculator.avif" alt="Project 3">
+          <div class="project-overlay">
+            <span>Click to View Details</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Web calculator</h3>
+          <p>A simple and efficient web calculator for quick and accurate calculations.</p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h4>Technologies Used:</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+          <p class="project-description">
+            This web calculator offers a straightforward and user-friendly interface for performing basic to advanced
+            calculations. With a clean design, it allows users to quickly input numbers, perform operations, and get
+            results instantly. Ideal for everyday calculations, this tool ensures accuracy and ease of use.
+          </p>
+          <a href="https://calculator-asgx.netlify.app" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder="Email">
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" required placeholder="Message"></textarea>
+      </div>
+      <div class="btns">
+        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="reset" class="submit-btn">Reset</button>
+      </div>
+    </form>
+  </section>
+  <div class="social-links">
+    <a href="https://github.com/amitdevx" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/amitdevx" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://x.com/AmitdevX" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+  <footer>
+
+    <p>&copy; 2025 ASGx. All rights reserved.</p>
+  </footer>
+
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
