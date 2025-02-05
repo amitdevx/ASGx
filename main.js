@@ -4,8 +4,7 @@ import emailjs from '@emailjs/browser';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Initialize EmailJS
-emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+
 
 // Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
@@ -192,7 +191,7 @@ function sendEmail() {
   emailjs.send(serviceId, templateId, params).then(
     res => {
       document.getElementById("name").value = "";
-      document.getElementById("email").value = ";"
+      document.getElementById("email").value = "";
       document.getElementById("message").value = "";
       console.log(res);
       alert("Message sent successfully");

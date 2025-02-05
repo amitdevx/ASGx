@@ -721,6 +721,7 @@ footer {
 
   .about-text {
     padding: 1rem;
+    text-align: justify;
   }
 
   .about-content {
@@ -752,4 +753,50 @@ footer {
   .btns{
     display: block;
   }
+}
+
+
+/* loader  */
+
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transform: translate(-50%, -50%);
+  background: rgb(220, 220, 220);
+  z-index: 3100;
+  height: 100%;
+  width: 100%;
+}
+
+
+.loader span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: moveup 0.6s linear infinite alternate;
+
+}
+
+@keyframes moveup {
+  100% {
+    transform: translateY(-25px);
+
+  }
+}
+
+
+.loader span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.5s;
 }
